@@ -1,58 +1,113 @@
-body {
+ /* Global Reset */
+* {
+  box-sizing: border-box;
   margin: 0;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background: linear-gradient(135deg, #ff7e5f, #feb47b);
+  padding: 0;
+}
+
+/* Body Background */
+body {
+  font-family: 'Poppins', sans-serif;
   height: 100vh;
+  background: linear-gradient(135deg, #ff9a9e, #fad0c4);
   display: flex;
   align-items: center;
   justify-content: center;
+  background-attachment: fixed;
 }
 
-.login-box {
-  background: rgba(255, 255, 255, 0.2);
+/* Center Container */
+.center-box {
+  background: rgba(255, 255, 255, 0.1);
   padding: 40px;
-  border-radius: 15px;
-  backdrop-filter: blur(15px);
-  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+  backdrop-filter: blur(10px);
+  text-align: center;
+  color: #fff;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+}
+
+.center-box h1 {
+  font-size: 2.2rem;
+  margin-bottom: 10px;
+}
+
+.center-box p {
+  margin-bottom: 25px;
+  font-size: 1.1rem;
+}
+
+.center-box .btn {
+  background: #ff6a00;
+  padding: 12px 28px;
+  color: white;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+.center-box .btn:hover {
+  background: #ff944d;
+  transform: scale(1.05);
+}
+
+/* Login Box Styling */
+.login-box {
+  background: rgba(255, 255, 255, 0.15);
+  padding: 40px;
+  border-radius: 20px;
+  backdrop-filter: blur(20px);
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
   width: 100%;
-  max-width: 350px;
+  max-width: 400px;
   color: white;
 }
 
 .login-box h2 {
+  margin-bottom: 25px;
   text-align: center;
-  margin-bottom: 20px;
+  font-size: 2rem;
 }
 
 input[type="text"],
 input[type="password"] {
   width: 100%;
-  padding: 12px;
+  padding: 14px;
   margin: 10px 0 20px;
   border: none;
   border-radius: 10px;
   background: rgba(255, 255, 255, 0.2);
   color: #fff;
-  font-size: 16px;
+  font-size: 1rem;
+  transition: background 0.3s;
+}
+
+input:focus {
+  background: rgba(255, 255, 255, 0.3);
   outline: none;
 }
 
 input::placeholder {
-  color: #eee;
+  color: #e0e0e0;
 }
 
 button {
   width: 100%;
-  padding: 12px;
-  background: #ff6a00;
-  color: white;
+  padding: 14px;
+  background: #8e2de2;
+  background: linear-gradient(to right, #8e2de2, #4a00e0);
   border: none;
   border-radius: 10px;
-  font-size: 16px;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: bold;
   cursor: pointer;
-  transition: background 0.3s ease;
+  transition: 0.3s ease;
 }
 
 button:hover {
-  background: #ff8000;
+  opacity: 0.9;
+  transform: scale(1.03);
 }
